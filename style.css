@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  background-color: ivory;
+}
+
+div {
+  margin: auto;
+  padding: 3px;
+  margin-top: 10px;
+  background-color: white;
+  border: 2px solid gray;
+  max-width: 400px;
+}
+textarea {
+  width: 300px;
+  resize: none;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  background-color: lightgray;
+}
+
+#errorMessage {
+  visibility: collapse;
+  display: inline;
+  color: red;
+}
