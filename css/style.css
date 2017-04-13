@@ -1,0 +1,215 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.submitForm {
+  display: flex;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px gray;
+}
+
+tr:first-child{
+  background-color: lightblue;
+  border-bottom: solid 1px gray;
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tableColumn-1,
+.tableColumn-2 {
+  text-align: center;
+  flex: 8;
+}
+
+.tableColumn-3 {
+  flex: 1;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+button,
+input[type="submit"] {
+  background-color: lightblue;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #57D6C7;
+}
+
+button {
+  width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.5em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: lightblue;
+	text-transform: uppercase;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.links li a:hover {
+	color: lightblue;
+  background: #fff;
+}
+
+.name a,
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: lightblue;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 1em 0;
+	background: lightgray;
+}
+
+#errorMessage {
+  visibility: collapse;
+  text-align: center;
+  color: red;
+  margin: 0;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .main-header,
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav,
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .column:first-child {
+    width: 35%;
+    margin-right: 24px;
+  }
+
+  .column:last-child {
+    width: 65%;
+  }
+
+  /*.wrap {
+    min-height: calc(100vh - 82px);
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    padding-left: 1em;
+    padding-right: 1em;
+    vertical-align: top;
+  }*/
+}
